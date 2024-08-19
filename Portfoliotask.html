@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        nav {
+            background: #333;
+            color: #fff;
+            padding: 1rem;
+        }
+
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .hero {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5rem 0;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+        }
+
+        .hero p {
+            margin: 1rem 0;
+            font-size: 1.2rem;
+        }
+
+        .hero .btn {
+            background: #ff6600;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            background: #e65c00;
+        }
+
+        .about, .projects, .contact {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 1.5rem;
+        }
+
+        .project-item {
+            margin-bottom: 2rem;
+        }
+
+        .project-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact form {
+            margin: 2rem 0;
+        }
+
+        .contact form input, .contact form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 1rem 2rem;
+            background: #ff6600;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background: #e65c00;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <h1 class="logo"><a href="#home">My Portfolio</a></h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to My Portfolio</h2>
+            <p>I am a Web Developer and Software Engineer passionate about building web applications.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="C:\Users\HP\Documents\download.jpeg" alt="Your Name" class="profile-pic">
+            <p>Hello! I’m a Web Developer with experience in C#, PHP, and JavaScript.</p>
+            <p>I enjoy learning new technologies and applying them to solve real-world problems. My skills include working with tools like Visual Studio, XAMPP, and building responsive web applications.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+
+            <div class="project-item">
+                <h3>Hospital Management System (C# with WinForms)</h3>
+                <p>A Windows application for managing hospital operations, including patient management, doctor scheduling, diagnosis tracking, and billing.</p>
+            </div>
+
+            <div class="project-item">
+                <h3>PHP Chat Application</h3>
+                <p>A simple chat application built with PHP and MySQL, allowing users to send and receive messages in real-time.</p>
+            </div>
+
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>You can also reach me on <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a> or check out my work on <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
